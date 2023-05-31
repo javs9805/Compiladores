@@ -115,9 +115,10 @@ def match(t):
 			while (caracter == " "):
 				entrada = entrada[1:]
 				caracter = entrada[0:1]
-		return
+		
 		print("Error!, {} no es una entrada valida!".format(caracter))
 		sys.exit(200)
+		return
 
 
 #Programa principal
@@ -127,7 +128,7 @@ if __name__ == "__main__":
 
 	#	print(lista())
 
-	entrada = "   43 2451      701"
+	entrada = "254"
 	caracter = entrada[0:1]
 
 	print(lista())
