@@ -8,7 +8,8 @@ def R():
 	global i
 
 	if (caracter == " "):
-		espacio()
+		
+		match(" ")
 
 		x = lista()
 
@@ -50,8 +51,12 @@ def R1():
 		nroInvx = nroInv()
 		return nroInvx
 	else:
-		return " "
-	return
+		if( caracter == " "):
+			print("Entro al if, caracter == "+caracter)
+			return " "
+		else:
+			match(" ")
+	
 
 
 def digito():
@@ -82,7 +87,7 @@ def digito():
 	elif (caracter == "7"):
 		match("7")
 		return "7"
-	elif (caracter == "9"):
+	elif (caracter == "8"):
 		match("8")
 		return "8"
 	else:
@@ -96,9 +101,8 @@ def espacio():
 
 	match(" ")
 
-	return " "
 
-
+"""
 def match(t):
 	global caracter
 	global entrada
@@ -120,15 +124,35 @@ def match(t):
 		sys.exit(200)
 		return
 
+"""
+
+def match(t):
+	global caracter
+	global entrada
+
+	if( t == caracter):
+		entrada = entrada[1:]
+		caracter = entrada[0:1]
+		
+		print(caracter)
+
+		#while( caracter == " "):
+		#	entrada = entrada[1:]
+		#	caracter = entrada[0:1]
+	else:
+		print("Error!, {} no es una entrada valida!".format(caracter))
+		sys.exit(200)
 
 #Programa principal
 if __name__ == "__main__":
-	entrada = "43    2451 701"
-	caracter = entrada[0:1]
-
+	
 	#	print(lista())
 
-	entrada = "254"
+	#entrada = "987 654 321"
+	
+	entrada = "987 54 654"
+
+	
 	caracter = entrada[0:1]
 
 	print(lista())
