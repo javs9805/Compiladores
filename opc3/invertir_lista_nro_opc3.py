@@ -23,7 +23,6 @@ def R():
         match(" ")
         return ""
 
-
 def nro():
 
     digitoX = digito()
@@ -46,9 +45,7 @@ def R1():
     else:
         match(" ")
         return ""
-            
-    
-
+             
 def digito():
 
     global caracter
@@ -118,6 +115,10 @@ def match(t):
             entrada = entrada[1:]
             caracter = entrada[0:1]
 
+            if(t == " "):
+                while( caracter == " "):
+                    entrada = entrada[1:]
+                    caracter = entrada[0:1]
         else:
 
             print("Error!, {} no es una entrada valida!".format(caracter))
@@ -128,7 +129,7 @@ if __name__ == "__main__":
 	
 	#	print(lista())
 
-	entrada = "43 2451 701"
+	entrada = "43                    2451 701 451   125 876"
 	caracter = entrada[0:1]
 
-	print(lista())
+	print("Entrada: "+entrada+"\nSalida: "+lista())
