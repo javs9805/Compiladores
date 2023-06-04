@@ -158,11 +158,11 @@ def match(t):
             exit(200)
 
 #Progrma principal
-if __name__ == "__main__":
+
+#entrada = "43 2451 701"
 	
-	#	print(lista())
+entrada = input("Ingrese la entrada: ")
+    
+caracter = entrada[0:1]
 
-	entrada = "43                    2451 701 451   125 876"
-	caracter = entrada[0:1]
-
-	print("Entrada: "+entrada+"\nSalida: "+lista())
+print("Entrada: "+entrada+"\nSalida: "+lista())
