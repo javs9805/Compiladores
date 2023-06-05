@@ -19,8 +19,8 @@ lista → nro R
 """
 def lista():
     
-    nroX = nro() #34
-    Rx = R() #
+    nroX = nro() 
+    Rx = R() 
 
     return nroX+" "+Rx
 
@@ -146,6 +146,7 @@ def match(t):
         
         if ( t == caracter):
 
+            #getNextSymbol
             entrada = entrada[1:]
             caracter = entrada[0:1]
 
