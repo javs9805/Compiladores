@@ -117,15 +117,15 @@ def match(t):
 
     global caracter
     global entrada
-
     
     if( len(caracter) > 0):
         
         if ( t == caracter):
-
+            #getNexSymbol
             entrada = entrada[1:]
             caracter = entrada[0:1]
 
+            #Elimina los espacios redundantes
             if(t == " "):
                 while( caracter == " "):
                     entrada = entrada[1:]
