@@ -143,6 +143,7 @@ def match(t):
 
     
     if( len(caracter) > 0):
+        
         if ( t == caracter):
 
             entrada = entrada[1:]
