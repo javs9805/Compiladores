@@ -1,5 +1,22 @@
+
+"""
+        Traductor Dirigido por la Sintexis
+         
+        Recibe una lista de números enteros y retorna la misma lista pero esta vez con los números invertidos.
+        
+        Ejemplo:
+	        - Entrada = 43 2451 701
+	        - Salida = 34 1542 107
+
+        Autores: Cesar Belotto y Javier Lopez
+"""
+
 import sys
 
+
+"""
+lista → + nro lista | - nro lista | nro lista | ε
+"""
 def lista():
 
     global caracter
@@ -37,6 +54,9 @@ def lista():
         match(" ")
         return ""        
 
+"""
+nro → digito R
+"""
 def nro():
 
     digitoX = digito()
@@ -46,6 +66,9 @@ def nro():
 
     return x
 
+"""
+R → nro | ε
+"""
 def R():
 
     global caracter
@@ -61,7 +84,10 @@ def R():
 
         match(" ")
         return ""
-    
+
+"""
+digito → 0 | 1 | … | 9
+"""    
 def digito():
 
     global caracter
