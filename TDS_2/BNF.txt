@@ -1,0 +1,4 @@
+lista → + nro lista | - nro lista | nro lista | ε
+nro → digito R
+R → nro | ε
+digito → 0 | 1 | … | 9
